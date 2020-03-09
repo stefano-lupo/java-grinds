@@ -13,7 +13,7 @@ public class Zoo {
 
   public void getAnimalsToSayHi() {
     for (Animal theAnimal : myAnimals) {
-      theAnimal.sayHello();
+      theAnimal.talk("hi");
     }
   }
 

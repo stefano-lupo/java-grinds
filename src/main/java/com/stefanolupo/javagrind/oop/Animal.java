@@ -1,6 +1,6 @@
 package com.stefanolupo.javagrind.oop;
 
-public class Animal {
+public class Animal implements CanTalk {
 
   public String name;
   public String type;
@@ -13,9 +13,12 @@ public class Animal {
     this.age = age;
   }
 
-  public void sayHello() {
-    System.out.println("Hey Im " + name);
+  public void talk(String message) {
+    System.out.println("Animal: " + message);
   }
 
+  public void derp() {
+
+  }
 
 }
